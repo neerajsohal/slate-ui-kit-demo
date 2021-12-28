@@ -46,16 +46,44 @@
 			@include('navigation.sidebar')
 		</x-slot>
 		
+		
+		<x-slate::header>
+
+			<x-slot name="heading">
+				License
+			</x-slot name="heading">
+
+		</x-slate::header>
 		<div class="px-4 py-4">
 			<x-slate::content>
-				<x-slate::heading tag="h1" font-medium>Welcome to Slate UI Kit</x-slate::heading>
-				<p>Slate UI Kit is a set of anonymous blade components built using TailwindCSS.</p>
+				
+				<p>Slate UI Kit is licensed under MIT License.</p>
+				<p>It's a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+				<p><strong>IMPORTANT:</strong> Though we try to keep the below license text in sync with the Github Repo'slicense. It's advised to refer to LICENSE file in the repo.</p>
+
+				<pre class="bg-gray-300 text-gray-900">
+MIT License
+
+Copyright 2021 (&copy;) Neeraj Kumar (hello@neerajkumar.name)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
 			</x-slate::content>
-			<x-slate::prism>
-				<x-slot name="code" lang="bash">
-					$ composer require neerajsohal/slate
-				</x-slot>
-			</x-slate::prism>
 		</div>
 
 

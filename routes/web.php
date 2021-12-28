@@ -15,4 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+
+Route::group(['prefix' => 'getting-started'], function(){
+	Route::get('license', function() {
+		return view('pages.getting-started.license');
+	})->name('getting-started.license');
 });

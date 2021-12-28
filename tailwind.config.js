@@ -1,5 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin')
+
 
 module.exports = {
 	darkMode: 'class',
@@ -30,5 +32,11 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+		plugin(function({ addVariant }) {
+			addVariant('sidebar-expanded', '&:sidebar-expanded')
+		})
+	],
 };
